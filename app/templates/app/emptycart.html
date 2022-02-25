@@ -1,0 +1,19 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Emptycart{% endblock title %}
+{% block main-content %}
+<div class="container my-5">
+ <div class="row">
+ {% comment %} <h3>Welcome {{request.user.username}}</h3> {% endcomment %}
+  <div class="col-sm-2 border-end">
+   <ul class="list-unstyled">
+    {% comment %} <li class="d-grid"><a href="{% url 'profile' %}" class="btn btn-primary">Change Password</a></li> {% endcomment %}
+   </ul>
+  </div>
+  <div class="col-sm-9 offset-sm-1">
+        {% comment %} <h3> passwordchangedone</h3> {% endcomment %}
+        <div><img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3AZ826hsut4_Te3sWXtIm7EfzDi-3xKLpyA&usqp=CAU"</div>
+  </div>
+ </div>
+</div>
+{% endblock main-content %}
